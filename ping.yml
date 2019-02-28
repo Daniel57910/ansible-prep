@@ -1,0 +1,8 @@
+# ansible hosts
+- hosts:
+    all
+  tasks:
+    - name: ping the servers
+      command: ping
+    - name: get server hostname
+      command: hostname

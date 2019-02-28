@@ -1,0 +1,8 @@
+---
+  - hosts: all
+    tasks:
+    - name: ping and fail
+      command: ping
+    - name: get the hostname
+      command: hostname
+      

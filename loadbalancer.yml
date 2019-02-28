@@ -1,0 +1,7 @@
+---
+- hosts: loadbalancer
+  become: true
+  tasks:
+    - name: install nginx
+      #basically way of running sudo-apt-get, ensures that nginx is installed on every build
+      apt: name=nginx state=present update_cache=yes 
